@@ -1,0 +1,77 @@
+4. compare os 2 textos abaixo e diga se são iguais
+String texto01 = "Será que são iguais?";
+String texto02 = "Será que são iguais?";
+
+public class atividade4 {
+
+	public static void main(String[] args) {
+		String str = "Será que são iguais?";
+		String str2 = "Será que são iguais?";
+		boolean str1 =str.equals(str);
+		boolean str3 = str.equals(str2);
+		boolean str4= str.equalsIgnoreCase(str);
+		boolean str5= str.equalsIgnoreCase(str2);
+		System.out.println(str1);
+		System.out.println(str3);
+		System.out.println(str4);
+		System.out.println(str5);
+		
+	}
+
+}
+
+
+-----------------------------
+
+5. Faça um programa que receba de um usuário, um texto e exiba esse texto em letras maiúsculas
+
+import java.util.Scanner;
+
+public class atividade05 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner (System.in);
+		System.out.println("Digite: ");
+		String str= entrada.nextLine();
+		String texto = str.toUpperCase();
+		System.out.println(texto);
+		
+		
+		
+	}
+
+}
+
+--------------------------
+
+6. dado o Array a seguir, {"a", "vida", "é", "bela"}
+faça um programa que crie um string com texto retirado do Array e imprima. no seguinte
+formato. A VIDA É BELA
+
+public class atividade6 {
+
+	public static void main(String[] args) {
+		String array []= {"a", "vida", "é", "bela"};
+		String str= "A vida é bela";
+		String texto = str.toUpperCase();
+		System.out.println(texto);
+
+	}
+
+}
+
+------------------------------
+
+7. Refaça o exercício anterior, usando a maneira como o Mestre yoda falaria..BELA É VIDA A
+
+public class atividade7 {
+
+	public static void main(String[] args) {
+		String array []= {"a", "vida", "é", "bela"};
+		String str= "bela é vida a ";
+		String texto = str.toUpperCase();
+		System.out.println(texto);
+
+	}
+
+}
